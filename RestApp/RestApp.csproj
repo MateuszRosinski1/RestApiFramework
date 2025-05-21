@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<IsRestApp>true</IsRestApp>
+	<IncludeRuntime>false</IncludeRuntime>
+	<IncludeContentInPack>true</IncludeContentInPack>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<PackDefaultTargets>false</PackDefaultTargets>
+	<PackageId>RestApp.Template</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>MateuszRosinski</Authors>
+	<PackageType>Template</PackageType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="RestAPIFramework">
+			<HintPath>lib\RestAPIFramework.dll</HintPath>
+			<Private>true</Private>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Analyzer Include="analyzers\RestAPIAnalyzer.dll" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Content Include=".template.config\template.json" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="bin\$(Configuration)\net8.0\RestApp.runtimeconfig.json" Pack="false" />
+		<None Include=".template.config\template.json" Pack="true" PackagePath=".template.config\" />
+		<None Include="tools\RouteHigllighterExtension.vsix" Pack="true" PackagePath="tools\" />
+	</ItemGroup>
+</Project>
+
+

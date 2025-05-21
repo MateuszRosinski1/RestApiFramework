@@ -1,0 +1,30 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Mateusz Rosinski",
+    "classifications": [ "Web", "REST", "Custom" ],
+    "identity": "RestApp.Template",
+    "name": "RestApp",
+    "shortName": "restapp",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "RestApp",
+    "preferNameDirectory": true,
+    "postActions": [
+        {
+            "description": "Launching VSIX RouteHighlignting",
+            "manualInstructions": [
+                {
+                    "text": "Install extension from tools\\RouteHigllighterExtension.vsix"
+                }
+            ],
+            "actionId": "58CC6302-A4C8-46E8-8363-19CE1AC77F5E",
+            "args": {
+                "executable": "cmd.exe",
+                "args": "/c start tools\\RouteHigllighterExtension.vsix"
+            },
+            "continueOnError": true
+        }
+    ]
+}

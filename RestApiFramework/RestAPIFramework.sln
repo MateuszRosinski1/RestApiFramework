@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIFramework", "RestAPIFramework.csproj", "{8A6348A2-5AEA-4D35-9740-9CE24D90292E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApp", "..\RestApp\RestApp.csproj", "{CF1FD0F6-A52E-4A33-AEB6-198D3AAD07C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "analyzer", "analyzer", "{264E4CE6-A09F-413C-AFFC-25A1DEE56810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIAnalyzer", "..\RestAPIAnalyzer\RestAPIAnalyzer\RestAPIAnalyzer.csproj", "{E3EA5E48-7660-4DE1-BB9E-0B72E0481197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIAnalyzer.CodeFixes", "..\RestAPIAnalyzer\RestAPIAnalyzer.CodeFixes\RestAPIAnalyzer.CodeFixes.csproj", "{24F08572-62F1-4CD9-904E-BA7EC55BB4E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIAnalyzer.Package", "..\RestAPIAnalyzer\RestAPIAnalyzer.Package\RestAPIAnalyzer.Package.csproj", "{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIAnalyzer.Test", "..\RestAPIAnalyzer\RestAPIAnalyzer.Test\RestAPIAnalyzer.Test.csproj", "{6D014B87-3643-4984-8300-8E6F4F211515}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6348A2-5AEA-4D35-9740-9CE24D90292E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6348A2-5AEA-4D35-9740-9CE24D90292E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6348A2-5AEA-4D35-9740-9CE24D90292E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6348A2-5AEA-4D35-9740-9CE24D90292E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1FD0F6-A52E-4A33-AEB6-198D3AAD07C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1FD0F6-A52E-4A33-AEB6-198D3AAD07C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1FD0F6-A52E-4A33-AEB6-198D3AAD07C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1FD0F6-A52E-4A33-AEB6-198D3AAD07C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3EA5E48-7660-4DE1-BB9E-0B72E0481197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EA5E48-7660-4DE1-BB9E-0B72E0481197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EA5E48-7660-4DE1-BB9E-0B72E0481197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EA5E48-7660-4DE1-BB9E-0B72E0481197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24F08572-62F1-4CD9-904E-BA7EC55BB4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24F08572-62F1-4CD9-904E-BA7EC55BB4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24F08572-62F1-4CD9-904E-BA7EC55BB4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24F08572-62F1-4CD9-904E-BA7EC55BB4E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D014B87-3643-4984-8300-8E6F4F211515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D014B87-3643-4984-8300-8E6F4F211515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D014B87-3643-4984-8300-8E6F4F211515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D014B87-3643-4984-8300-8E6F4F211515}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3EA5E48-7660-4DE1-BB9E-0B72E0481197} = {264E4CE6-A09F-413C-AFFC-25A1DEE56810}
+		{24F08572-62F1-4CD9-904E-BA7EC55BB4E9} = {264E4CE6-A09F-413C-AFFC-25A1DEE56810}
+		{49A0FF41-3ED4-4BCE-B4F1-BC16825E7A52} = {264E4CE6-A09F-413C-AFFC-25A1DEE56810}
+		{6D014B87-3643-4984-8300-8E6F4F211515} = {264E4CE6-A09F-413C-AFFC-25A1DEE56810}
+	EndGlobalSection
+EndGlobal
